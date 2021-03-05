@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheets/prove09.css" />
+    <title>Postal Rate Calculator</title>
+  </head>
+
+  <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <div class="img_container">
+      <img src="images/usps.png" alt="USPS Logo" />
+    </div>
+
+    <h1>Calculate Postal Rate</h1>
+    <div class="form_container">
+      <form method="POST" action="/postRateCalculator.html">
+        <label for="weight">Package Weight (oz.): </label>
+        <input type="number" name="weight" id="weight" required step=".01"/><br /><br />
+        <label for="mailType">Select Type of Mail: </label>
+        <select name="mailType" id="mailType" required>
+          <option value="Letters (Stamped)">Letters (Stamped)</option>
+          <option value="Letters (Metered)">Letters (Metered)</option>
+          <option value="Large Envelopes (Flats)">Large Envelopes (Flats)</option>
+          <option value="First-Class Package Service - Retail (Zone 1 & 2 Only)">First-Class Package Service - Retail (Zone 1 & 2 Only)</option>
+          </select><br /><br />
+          <div class="button_container">
+            <button type="submit" name="submit" id="submit">Submit</button>
+          </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>
+        For additional Questions/Concerns please visit the Offical USPS website.
+      </p>
+      <a href="https://www.usps.com/">Official USPS Website</a>
+    </footer>
+  </body>
+</html>

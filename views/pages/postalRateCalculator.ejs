@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheets/prove09.css" />
+    <title>Postal Rate Calculator Result Page</title>
+  </head>
+
+  <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <div class="img_container">
+        <img src="images/usps.png" alt="USPS Logo" />
+      </div>
+
+    <h1>Your USPS Package Rate Is:</h1>
+    <p>
+      Error Message: <%= errorMessage %><br />
+      Package Weight: <%= weight %> (oz.)<br />
+      Package Type: <%= mailType %><br />
+      <b>Package Rate: $<%= mailRate %></b><br />
+    </p>
+
+    <footer>
+      <p>
+        For additional Questions/Concerns please visit the Offical USPS website.
+      </p>
+      <a href="https://www.usps.com/">Official USPS Website</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-size: 20px;
+}
+
+.img_container {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.form_container {
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.button_container {
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
